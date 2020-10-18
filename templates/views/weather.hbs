@@ -1,0 +1,51 @@
+ <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="The HTML5 Herald">
+      <meta name="author" content="SitePoint">
+        <title>Weather Project</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet/text" href="bootstrap/css//bootstrap.min.css">
+        <script href="bootstrap/js//bootstrap.min.js"></script>
+        <link rel="stylesheet" href="httpspro.fontawesome.comreleasesv5.10.0cssall.css integrity=sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+     </head>
+    <body>
+        {{>header}}
+    
+        <section>
+   <div class="container-fluid main_header">
+       <div class="row">
+           <div class="col-md-6 col-12 mx-auto">
+               <div class="main_content">
+                   <form class="temp_form">
+                       <input type="text" placeholder="Enter CityName"  id="cname" autocomplete="off">
+                       <input type="submit" value="Submit" id="subbtn"></button>
+                       {{!-- <button id="hello">Clickme</button> --}}
+                   </form>
+                   <div class="teminfo ">
+                        
+                       <div class="main_layer">
+                           <p id="city_name" class=" text-center h2"></p>
+                           <div class="middle_layer data_hide">
+                               <p ><span id="temp">0</span><sup>o</sup>c
+                               <span id="temp_status" ></span></p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+        </section>
+          {{>footer}}
+         <script type="text/javascript"  src="js/main.js">
+   </script>
+         
+          </body>
+          </html>
