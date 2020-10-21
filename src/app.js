@@ -2,6 +2,7 @@ const express=require("express");
 const path =require("path");
 const app=express();
 const hbs=require("hbs");
+const port=process.env.port||8000;
 const { partials } = require("handlebars");
  
 const staticpath=path.join(__dirname ,"../public");
@@ -31,7 +32,7 @@ app.get("*",(req,res)=>{
 
 
 
-app.listen(8000,()=>{
+app.listen(port,()=>{
 
     console.log("hii");
 })
